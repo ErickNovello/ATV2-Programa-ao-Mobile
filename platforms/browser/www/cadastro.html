@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Cadastro de Bio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #1e2c4e;
+			font-family: Arial, sans-serif;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+		form {
+			max-width: 500px;
+			margin: 0 auto;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #284567;
+			border-radius: 5px;
+		}
+		label {
+			display: block;
+			margin-top: 20px;
+		}
+		input[type=text], input[type=number], textarea {
+			width: 100%;
+			margin-top: 5px;
+			padding: 5px;
+			background-color: #fff;
+			border: none;
+			border-radius: 5px;
+		}
+		button[type=submit] {
+			margin-top: 20px;
+			background-color: #3c5d90;
+			color: #fff;
+			border-radius: 5px;
+			padding: 5px 10px;
+			border: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Cadastro de Bio</h1>
+	<form id="form-cadastro">
+		<label for="nome">Nome:</label>
+		<input type="text" id="nome" name="nome" required>
+
+		<label for="idade">Idade:</label>
+		<input type="number" id="idade" name="idade" required>
+
+		<label for="profissao">Profissão:</label>
+		<input type="text" id="profissao" name="profissao" required>
+
+		<label for="resumo">Resumo:</label>
+		<textarea id="resumo" name="resumo" required></textarea>
+
+		<label for="foto">Foto:</label>
+		<input type="file" id="foto" name="foto" accept="image/*" required>
+
+		<button type="submit">Salvar</button>
+	</form>
+    <script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+
+			// código para salvar a bio aqui
+
+			window.location.href = 'index.html';
+		});
+	</script>
+</body>
+</html>

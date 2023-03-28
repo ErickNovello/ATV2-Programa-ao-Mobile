@@ -1,0 +1,21 @@
+.app {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type=file], textarea {
+    width: 100%;
+}
+
+button[type=submit] {
+    margin-top: 10px;
+}

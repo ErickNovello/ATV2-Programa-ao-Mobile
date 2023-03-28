@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Bios App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		body {
+			background-color: #1e2c4e;
+			font-family: Arial, sans-serif;
+			color: #fff;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 20px;
+		}
+		.bios {
+			max-width: 500px;
+			margin: 0 auto;
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #284567;
+			border-radius: 5px;
+		}
+		.bios h2 {
+			margin-top: 0;
+		}
+		.bio {
+			margin-top: 20px;
+			padding: 10px;
+			background-color: #3c5d90;
+			border-radius: 5px;
+		}
+		.bio img {
+			width: 100%;
+			max-width: 200px;
+			margin-right: 20px;
+			float: left;
+			border-radius: 5px;
+		}
+		.bio h3 {
+			margin-top: 0;
+		}
+		.bio p {
+			margin-top: 5px;
+			margin-bottom: 0;
+		}
+		.nova-bio {
+			margin-top: 20px;
+			background-color: #3c5d90;
+			color: #fff;
+			border-radius: 5px;
+			padding: 5px 10px;
+			border: none;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bios App</h1>
+	<button class="nova-bio">Nova Bio</button>
+	<div class="bios">
+		<h2>Bios Cadastradas</h2>
+		<div class="bio">
+			<img src="https://via.placeholder.com/200" alt="Foto">
+			<h3>Erick Piccoli</h3>
+			<p>Idade: 20 anos</p>
+			<p>Profissão: Desenvolvedor</p>
+			<p>Resumo: Não vem com olho gordo pra cima de mim, que de gordo, já basta eu mesmo! O isopor é o meu pastor e a cerveja não me faltará.</p>
+		</div>
+	</div>
+
+	<script>
+		const novaBioButton = document.querySelector('.nova-bio');
+		novaBioButton.addEventListener('click', () => {
+			window.location.href = 'cadastro.html';
+		});
+	</script>
+</body>
+</html>
